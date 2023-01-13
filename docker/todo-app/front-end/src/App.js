@@ -1,16 +1,14 @@
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route
+  BrowserRouter as Router, Route, Switch
 } from "react-router-dom";
 
-import logo from './logo.png';
 import './App.css';
+import logo from './logo.png';
 
 import { TaskProvider } from './context/taskContext';
 
-import ItemList from './components/ItemList';
 import ItemAdd from './components/ItemAdd';
+import ItemList from './components/ItemList';
 import TaskReset from "./components/TaskReset";
 
 function App() {
@@ -19,7 +17,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <span><h2>Trybe Todo List</h2></span>
+          <span><h2>Trybe Todo List!</h2></span>
           <Switch>
             <TaskProvider>
               <Route exact={true} path="/">
